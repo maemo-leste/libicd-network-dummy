@@ -1,0 +1,73 @@
+libicd-network-dummy (0.12) unstable; urgency=low
+
+  * Read dummy networks from gconf; print out instructions when
+    installing.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Thu, 04 Sep 2008 10:33:26 +0300
+
+libicd-network-dummy (0.11) unstable; urgency=low
+
+  * Removed unnecessary gconf instructions; the hard coded network name is
+    shown in scan.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Mon, 11 Aug 2008 15:00:00 +0300
+
+libicd-network-dummy (0.10) unstable; urgency=low
+
+  * Updated start_search to include search scope.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Wed, 12 Mar 2008 13:15:00 +0200
+
+libicd-network-dummy (0.9) unstable; urgency=low
+
+  * Set the ICD_NW_ATTR_AUTOCONNECT flag.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Thu, 24 Jan 2008 13:21:00 +0200
+
+libicd-network-dummy (0.8) unstable; urgency=low
+
+  * Updated ip_up callback to use ICD2 0.26 network API
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Wed,  1 Jan 2008 08:50:00 +0200
+
+libicd-network-dummy (0.7) unstable; urgency=low
+
+  * Removed stop search and updated start search to use ICd2 0.25 network API
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Tue, 18 Dec 2007 11:54:00 +0200
+
+libicd-network-dummy (0.6) unstable; urgency=low
+
+  * Use correct gconf path for network_type subdirectory. Fixes: NB#66778.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Mon, 27 Aug 2007 13:24:00 +0300
+
+libicd-network-dummy (0.5) unstable; urgency=low
+
+  * Support ICd2 v 0.6 changes in network module ip_up callback
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Fri, 10 Aug 2007 16:45:00 +0300
+
+libicd-network-dummy (0.4) unstable; urgency=low
+
+  * Use 'gconftool-2' in postinst script. Fixes: NB#65030.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Mon,  6 Aug 2007 14:19:00 +0300
+
+libicd-network-dummy (0.3) unstable; urgency=low
+
+  * Set module version and require icd2 >= 0.2
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Tue, 11 Jun 2007 11:07:00 +0300
+
+libicd-network-dummy (0.2) unstable; urgency=low
+
+  * GConf schema is DATA, not SCRIPTS
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Fri,  8 Jun 2007 11:10:00 +0300
+
+libicd-network-dummy (0.1) unstable; urgency=low
+
+  * Dummy network module for ICd2
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Wed,  5 Jun 2007 16:40:00 +0300
