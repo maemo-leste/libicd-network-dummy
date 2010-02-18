@@ -1,3 +1,9 @@
+libicd-network-dummy (0.13) unstable; urgency=low
+
+  * LGPL license for dummy network module, don't depend on non-free parts.
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Thu, 18 Feb 2010 14:42:55 +0200
+
 libicd-network-dummy (0.12) unstable; urgency=low
 
   * Read dummy networks from gconf; print out instructions when
