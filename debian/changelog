@@ -1,3 +1,9 @@
+libicd-network-dummy (0.13.1) unstable; urgency=low
+
+  * Fix leftover autoconf dependendy to non-free library, bump up version
+
+ -- Patrik Flykt <patrik.flykt@nokia.com>  Tue,  2 Mar 2010 19:04:00 +0200
+
 libicd-network-dummy (0.13) unstable; urgency=low
 
   * LGPL license for dummy network module, don't depend on non-free parts.
