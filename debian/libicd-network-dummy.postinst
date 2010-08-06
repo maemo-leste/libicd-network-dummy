@@ -17,11 +17,22 @@ set -e
 # for details, see http://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
+# Run gconftool via server or directly if D-Bus is not running
+gconftool_run () {
+    if gconftool-2 -p &>/dev/null
+    then
+        gconftool-2 $* 2>/dev/null
+    else
+        gconftool-2 --direct \
+            --config-source xml::/etc/gconf/gconf.xml.defaults \
+            $* | sed '1 d' 2>/dev/null
+    fi
+}
 
 case "$1" in
     configure)
 	# dh_gconf isn't working so we'll do it manually instead
-	gconftool-2 --install-schema-file=/etc/gconf/schemas/libicd-network-dummy.schemas
+	gconftool_run --install-schema-file=/etc/gconf/schemas/libicd-network-dummy.schemas
 
 	echo "Add a dummy network with:"
 	echo "gconftool-2 -s -t string /system/osso/connectivity/IAP/DUMMY/type DUMMY"
