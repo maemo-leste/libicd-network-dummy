@@ -6,10 +6,13 @@ ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
 	confflags += --enable-log-stderr
 endif
 
-DEB_CONFIGURE_EXTRA_FLAGS = --prefix=/usr --sysconfdir=/etc $(confflags)
+DEB_CONFIGURE_EXTRA_FLAGS = --prefix=/usr --sysconfdir=/etc --disable-static $(confflags)
 
 # default flags
 CFLAGS += -g -O2
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/tmp
 
 configure: configure.ac debian/changelog
 	./autogen.sh
