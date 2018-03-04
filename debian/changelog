@@ -1,3 +1,9 @@
+libicd-network-dummy (0.14.1) unstable; urgency=medium
+
+  * Prepare Maemo Leste packaging
+
+ -- Ivan J. <parazyd@dyne.org>  Sun, 04 Mar 2018 13:05:00 +0100
+
 libicd-network-dummy (0.14) unstable; urgency=low
 
   * Fixes: NB#172223 - libicd-network-dummy installation fails

@@ -13,10 +13,3 @@ Architecture: any
 Depends: icd2 (>= 0.37), ${shlibs:Depends}
 Description: ICd2 dummy network configuration module
  ICd2 dummy network configuration module
-
-Package: libicd-network-dummy-dbg
-Section: net
-Architecture: any
-Depends: libicd-network-dummy (= ${Source-Version})
-Description: Debug symbols for dummy network configuration module
- Debug symbols for dummy network configuration module
