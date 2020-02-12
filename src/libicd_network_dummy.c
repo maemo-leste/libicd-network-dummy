@@ -56,7 +56,7 @@ static void dummy_ip_up (const gchar *network_type,
 			 gpointer ip_up_cb_token,
 			 gpointer *private)
 {
-  const gchar const *env_set[] = {
+  const gchar *env_set[] = {
     "METHOD=manual",
     NULL
   };
