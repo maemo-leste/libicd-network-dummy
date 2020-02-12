@@ -1,3 +1,9 @@
+libicd-network-dummy (0.14.2) unstable; urgency=medium
+
+  * Fix compile warning
+
+ -- Ivan J. <parazyd@dyne.org>  Wed, 12 Feb 2020 19:25:15 +0100
+
 libicd-network-dummy (0.14.1) unstable; urgency=medium
 
   * Prepare Maemo Leste packaging
